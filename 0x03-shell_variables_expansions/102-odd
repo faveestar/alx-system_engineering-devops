@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd'\n\n | awk 'NR%2==1'
+grep -n '^' | grep -v '^[02468]*$' | cut -d ':' -f 2
